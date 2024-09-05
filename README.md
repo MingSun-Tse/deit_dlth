@@ -1,5 +1,10 @@
 # Data-Efficient architectures and training for Image classification
 
+Install environment
+```
+conda env create -f environment.yml
+```
+
 This repository contains PyTorch evaluation code, training code and pretrained models for the following papers:
 <details>
 <summary>
