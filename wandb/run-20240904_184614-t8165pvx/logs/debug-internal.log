@@ -1,0 +1,81 @@
+2024-09-04 18:46:14,366 INFO    StreamThr :2275338 [internal.py:wandb_internal():85] W&B internal server running at pid: 2275338, started at: 2024-09-04 18:46:14.366293
+2024-09-04 18:46:14,367 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status
+2024-09-04 18:46:14,370 INFO    WriterThread:2275338 [datastore.py:open_for_write():87] open: /home/mingyuan/lab/deit/wandb/run-20240904_184614-t8165pvx/run-t8165pvx.wandb
+2024-09-04 18:46:14,370 DEBUG   SenderThread:2275338 [sender.py:send():391] send: header
+2024-09-04 18:46:14,387 DEBUG   SenderThread:2275338 [sender.py:send():391] send: run
+2024-09-04 18:46:14,397 INFO    SenderThread:2275338 [sender.py:_setup_resume():761] checking resume status for None/deit_base_patch16_224_pretrain/t8165pvx
+2024-09-04 18:46:14,726 INFO    SenderThread:2275338 [dir_watcher.py:__init__():211] watching files in: /home/mingyuan/lab/deit/wandb/run-20240904_184614-t8165pvx/files
+2024-09-04 18:46:14,726 INFO    SenderThread:2275338 [sender.py:_start_run_threads():1200] run started: t8165pvx with start time 1725489974.365657
+2024-09-04 18:46:14,735 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: run_start
+2024-09-04 18:46:14,744 DEBUG   HandlerThread:2275338 [system_info.py:__init__():26] System info init
+2024-09-04 18:46:14,744 DEBUG   HandlerThread:2275338 [system_info.py:__init__():41] System info init done
+2024-09-04 18:46:14,744 INFO    HandlerThread:2275338 [system_monitor.py:start():194] Starting system monitor
+2024-09-04 18:46:14,744 INFO    SystemMonitor:2275338 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-04 18:46:14,744 INFO    HandlerThread:2275338 [system_monitor.py:probe():214] Collecting system info
+2024-09-04 18:46:14,745 INFO    SystemMonitor:2275338 [interfaces.py:start():188] Started cpu monitoring
+2024-09-04 18:46:14,745 INFO    SystemMonitor:2275338 [interfaces.py:start():188] Started disk monitoring
+2024-09-04 18:46:14,746 INFO    SystemMonitor:2275338 [interfaces.py:start():188] Started gpu monitoring
+2024-09-04 18:46:14,746 INFO    SystemMonitor:2275338 [interfaces.py:start():188] Started memory monitoring
+2024-09-04 18:46:14,747 INFO    SystemMonitor:2275338 [interfaces.py:start():188] Started network monitoring
+2024-09-04 18:46:14,779 DEBUG   HandlerThread:2275338 [system_info.py:probe():152] Probing system
+2024-09-04 18:46:14,786 DEBUG   HandlerThread:2275338 [system_info.py:_probe_git():137] Probing git
+2024-09-04 18:46:14,800 DEBUG   HandlerThread:2275338 [system_info.py:_probe_git():145] Probing git done
+2024-09-04 18:46:14,800 DEBUG   HandlerThread:2275338 [system_info.py:probe():200] Probing system done
+2024-09-04 18:46:14,800 DEBUG   HandlerThread:2275338 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-44-generic-x86_64-with-glibc2.17', 'python': '3.8.19', 'heartbeatAt': '2024-09-04T22:46:14.779435', 'startedAt': '2024-09-04T22:46:14.362679', 'docker': None, 'cuda': None, 'args': ('--model', 'deit_base_patch16_224', '--batch-size', '2048', '--data-path', 'data/imagenet', '--save_init_model', '--project_name', 'deit_base_patch16_224_pretrain'), 'state': 'running', 'program': 'main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/facebookresearch/deit.git', 'commit': '7e160fe43f0252d17191b71cbb5826254114ea5b'}, 'email': '893278994@qq.com', 'root': '/home/mingyuan/lab/deit', 'host': 'Large-Meeting-Room-A6000-X4', 'username': 'mingyuan', 'executable': '/home/mingyuan/anaconda3/envs/deit/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2577.5129843749996, 'min': 1800.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 2689.816, 'min': 1800.0, 'max': 3600.0}, {'current': 2370.309, 'min': 1800.0, 'max': 3600.0}, {'current': 2690.723, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1800.0, 'max': 3600.0}, {'current': 4289.574, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3428.723, 'min': 1800.0, 'max': 3600.0}, {'current': 4290.44, 'min': 1800.0, 'max': 3600.0}, {'current': 3431.394, 'min': 1800.0, 'max': 3600.0}, {'current': 2700.0, 'min': 1800.0, 'max': 3600.0}, {'current': 4292.118, 'min': 1800.0, 'max': 3600.0}, {'current': 3428.935, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 4290.439, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 2236.656, 'min': 1800.0, 'max': 3600.0}, {'current': 2392.677, 'min': 1800.0, 'max': 3600.0}, {'current': 2125.443, 'min': 1800.0, 'max': 3600.0}, {'current': 2659.465, 'min': 1800.0, 'max': 3600.0}, {'current': 2601.497, 'min': 1800.0, 'max': 3600.0}, {'current': 2749.946, 'min': 1800.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 1800.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3564.955, 'min': 1800.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1800.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1800.0, 'max': 3600.0}], 'disk': {'/': {'total': 1832.2072448730469, 'used': 1486.5470085144043}}, 'gpu': 'NVIDIA RTX 6000 Ada Generation', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA RTX 6000 Ada Generation', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX 6000 Ada Generation', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX 6000 Ada Generation', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX 6000 Ada Generation', 'memory_total': 51527024640}], 'memory': {'total': 251.52008438110352}}
+2024-09-04 18:46:14,801 INFO    HandlerThread:2275338 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-04 18:46:14,801 INFO    HandlerThread:2275338 [system_monitor.py:probe():227] Publishing system info
+2024-09-04 18:46:14,801 DEBUG   HandlerThread:2275338 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-04 18:46:15,727 INFO    Thread-12 :2275338 [dir_watcher.py:_on_file_created():271] file/dir created: /home/mingyuan/lab/deit/wandb/run-20240904_184614-t8165pvx/files/conda-environment.yaml
+2024-09-04 18:46:15,771 DEBUG   HandlerThread:2275338 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-04 18:46:15,772 INFO    HandlerThread:2275338 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-04 18:46:15,774 DEBUG   SenderThread:2275338 [sender.py:send():391] send: files
+2024-09-04 18:46:15,774 INFO    SenderThread:2275338 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-04 18:46:15,873 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-04 18:46:15,873 DEBUG   SenderThread:2275338 [sender.py:send_request():418] send_request: python_packages
+2024-09-04 18:46:15,874 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-04 18:46:15,874 DEBUG   SenderThread:2275338 [sender.py:send_request():418] send_request: stop_status
+2024-09-04 18:46:15,875 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 18:46:16,034 DEBUG   SenderThread:2275338 [sender.py:send():391] send: telemetry
+2024-09-04 18:46:16,034 DEBUG   SenderThread:2275338 [sender.py:send():391] send: config
+2024-09-04 18:46:16,094 INFO    wandb-upload_0:2275338 [upload_job.py:push():130] Uploaded file /tmp/tmpjxx384i2wandb/9wmscmou-wandb-metadata.json
+2024-09-04 18:46:16,727 INFO    Thread-12 :2275338 [dir_watcher.py:_on_file_created():271] file/dir created: /home/mingyuan/lab/deit/wandb/run-20240904_184614-t8165pvx/files/wandb-metadata.json
+2024-09-04 18:46:16,727 INFO    Thread-12 :2275338 [dir_watcher.py:_on_file_created():271] file/dir created: /home/mingyuan/lab/deit/wandb/run-20240904_184614-t8165pvx/files/requirements.txt
+2024-09-04 18:46:16,727 INFO    Thread-12 :2275338 [dir_watcher.py:_on_file_created():271] file/dir created: /home/mingyuan/lab/deit/wandb/run-20240904_184614-t8165pvx/files/output.log
+2024-09-04 18:46:18,727 INFO    Thread-12 :2275338 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mingyuan/lab/deit/wandb/run-20240904_184614-t8165pvx/files/output.log
+2024-09-04 18:46:20,241 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 18:46:25,875 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 18:46:25,876 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 18:46:30,874 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-04 18:46:30,874 DEBUG   SenderThread:2275338 [sender.py:send_request():418] send_request: stop_status
+2024-09-04 18:46:30,946 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 18:46:35,947 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 18:46:37,088 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 18:46:41,875 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 18:46:45,874 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-04 18:46:45,874 DEBUG   SenderThread:2275338 [sender.py:send_request():418] send_request: stop_status
+2024-09-04 18:46:47,050 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 18:46:47,087 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 18:46:47,736 INFO    Thread-12 :2275338 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/mingyuan/lab/deit/wandb/run-20240904_184614-t8165pvx/files/config.yaml
+2024-09-04 18:46:52,875 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 18:46:57,087 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 18:46:57,875 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 18:47:00,874 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-04 18:47:00,874 DEBUG   SenderThread:2275338 [sender.py:send_request():418] send_request: stop_status
+2024-09-04 18:47:03,033 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 18:47:07,087 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 18:47:08,876 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 18:47:13,876 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 18:47:14,747 DEBUG   SystemMonitor:2275338 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-04 18:47:14,757 DEBUG   SenderThread:2275338 [sender.py:send():391] send: stats
+2024-09-04 18:47:15,874 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-04 18:47:15,875 DEBUG   SenderThread:2275338 [sender.py:send_request():418] send_request: stop_status
+2024-09-04 18:47:17,087 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 18:47:18,982 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 18:47:23,983 DEBUG   HandlerThread:2275338 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 18:47:26,763 INFO    memory    :2275338 [interfaces.py:monitor():138] Process proc.memory.rssMB has exited.
+2024-09-04 18:47:26,763 DEBUG   SystemMonitor:2275338 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-04 18:47:26,763 DEBUG   SystemMonitor:2275338 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-04 18:47:26,765 DEBUG   SenderThread:2275338 [sender.py:send():391] send: stats
+2024-09-04 18:47:27,442 WARNING StreamThr :2275338 [internal.py:is_dead():413] Internal process exiting, parent pid 2275262 disappeared
+2024-09-04 18:47:27,442 ERROR   StreamThr :2275338 [internal.py:wandb_internal():151] Internal process shutdown.
+2024-09-04 18:47:27,752 INFO    MainThread:2275338 [internal.py:handle_exit():75] Internal process exited

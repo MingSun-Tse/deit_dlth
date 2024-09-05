@@ -1,0 +1,136 @@
+
+| distributed init (rank 0): env://
+number of params: 86567656
+0 None None
+1 None 0
+1 None 0
+1 None 0
+1 None 0
+1 None 1
+1 None 1
+1 None 1
+1 None 1
+1 None 2
+1 None 2
+1 None 2
+1 None 2
+1 None 3
+1 None 3
+1 None 3
+1 None 3
+1 None 4
+1 None 4
+1 None 4
+1 None 4
+1 None 5
+1 None 5
+1 None 5
+1 None 5
+1 None 6
+1 None 6
+1 None 6
+1 None 6
+1 None 7
+1 None 7
+1 None 7
+1 None 7
+1 None 8
+1 None 8
+1 None 8
+1 None 8
+1 None 9
+1 None 9
+1 None 9
+1 None 9
+1 None 10
+1 None 10
+1 None 10
+1 None 10
+1 None 11
+1 None 11
+1 None 11
+1 None 11
+2 None None
+Register layer index and kernel shape:
+[ 0]    module.patch_embed.proj -- kernel_shape: torch.Size([768, 3, 16, 16])
+[ 1]   module.blocks.0.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[ 2]  module.blocks.0.attn.proj -- kernel_shape: torch.Size([768, 768])
+[ 3]    module.blocks.0.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[ 4]    module.blocks.0.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[ 5]   module.blocks.1.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[ 6]  module.blocks.1.attn.proj -- kernel_shape: torch.Size([768, 768])
+[ 7]    module.blocks.1.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[ 8]    module.blocks.1.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[ 9]   module.blocks.2.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[10]  module.blocks.2.attn.proj -- kernel_shape: torch.Size([768, 768])
+[11]    module.blocks.2.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[12]    module.blocks.2.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[13]   module.blocks.3.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[14]  module.blocks.3.attn.proj -- kernel_shape: torch.Size([768, 768])
+[15]    module.blocks.3.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[16]    module.blocks.3.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[17]   module.blocks.4.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[18]  module.blocks.4.attn.proj -- kernel_shape: torch.Size([768, 768])
+[19]    module.blocks.4.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[20]    module.blocks.4.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[21]   module.blocks.5.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[22]  module.blocks.5.attn.proj -- kernel_shape: torch.Size([768, 768])
+[23]    module.blocks.5.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[24]    module.blocks.5.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[25]   module.blocks.6.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[26]  module.blocks.6.attn.proj -- kernel_shape: torch.Size([768, 768])
+[27]    module.blocks.6.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[28]    module.blocks.6.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[29]   module.blocks.7.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[30]  module.blocks.7.attn.proj -- kernel_shape: torch.Size([768, 768])
+[31]    module.blocks.7.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[32]    module.blocks.7.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[33]   module.blocks.8.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[34]  module.blocks.8.attn.proj -- kernel_shape: torch.Size([768, 768])
+[35]    module.blocks.8.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[36]    module.blocks.8.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[37]   module.blocks.9.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[38]  module.blocks.9.attn.proj -- kernel_shape: torch.Size([768, 768])
+[39]    module.blocks.9.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[40]    module.blocks.9.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[41]  module.blocks.10.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[42] module.blocks.10.attn.proj -- kernel_shape: torch.Size([768, 768])
+[43]   module.blocks.10.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[44]   module.blocks.10.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[45]  module.blocks.11.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[46] module.blocks.11.attn.proj -- kernel_shape: torch.Size([768, 768])
+[47]   module.blocks.11.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[48]   module.blocks.11.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[49]                module.head -- kernel_shape: torch.Size([1000, 768])
+Test:  [  0/131]  eta: 0:14:36  loss: 7.1124 (7.1124)  acc1: 0.0000 (0.0000)  acc5: 0.0000 (0.0000)  time: 6.6938  data: 5.8325  max mem: 4096
+Test:  [ 10/131]  eta: 0:01:42  loss: 7.0475 (7.0557)  acc1: 0.0000 (0.0000)  acc5: 0.0000 (0.2131)  time: 0.8454  data: 0.5645  max mem: 4097
+Test:  [ 20/131]  eta: 0:01:01  loss: 7.0426 (7.0595)  acc1: 0.0000 (0.0000)  acc5: 0.0000 (0.4216)  time: 0.2452  data: 0.0212  max mem: 4097
+Test:  [ 30/131]  eta: 0:00:46  loss: 7.0691 (7.0752)  acc1: 0.0000 (0.0000)  acc5: 0.0000 (0.3192)  time: 0.2425  data: 0.0194  max mem: 4097
+Test:  [ 40/131]  eta: 0:00:37  loss: 7.0663 (7.0548)  acc1: 0.0000 (0.0699)  acc5: 0.2604 (0.4827)  time: 0.2681  data: 0.0470  max mem: 4097
+Test:  [ 50/131]  eta: 0:00:31  loss: 7.0094 (7.0499)  acc1: 0.0000 (0.0664)  acc5: 0.5208 (0.4545)  time: 0.2746  data: 0.0502  max mem: 4097
+Test:  [ 60/131]  eta: 0:00:26  loss: 7.0352 (7.0525)  acc1: 0.0000 (0.0555)  acc5: 0.0000 (0.4483)  time: 0.2726  data: 0.0480  max mem: 4097
+Test:  [ 70/131]  eta: 0:00:21  loss: 7.0469 (7.0527)  acc1: 0.0000 (0.0770)  acc5: 0.0000 (0.4805)  time: 0.2725  data: 0.0503  max mem: 4097
+Test:  [ 80/131]  eta: 0:00:17  loss: 7.0117 (7.0548)  acc1: 0.0000 (0.0707)  acc5: 0.0000 (0.4405)  time: 0.2714  data: 0.0471  max mem: 4097
+Test:  [ 90/131]  eta: 0:00:13  loss: 7.0587 (7.0572)  acc1: 0.0000 (0.0630)  acc5: 0.0000 (0.3978)  time: 0.2746  data: 0.0493  max mem: 4097
+Test:  [100/131]  eta: 0:00:10  loss: 7.1009 (7.0604)  acc1: 0.0000 (0.0825)  acc5: 0.0000 (0.4538)  time: 0.2743  data: 0.0481  max mem: 4097
+Test:  [110/131]  eta: 0:00:06  loss: 7.1086 (7.0632)  acc1: 0.0000 (0.0751)  acc5: 0.0000 (0.4270)  time: 0.2746  data: 0.0460  max mem: 4097
+Test:  [120/131]  eta: 0:00:03  loss: 7.0717 (7.0648)  acc1: 0.0000 (0.0818)  acc5: 0.0000 (0.4326)  time: 0.2726  data: 0.0453  max mem: 4097
+Test:  [130/131]  eta: 0:00:00  loss: 7.0140 (7.0641)  acc1: 0.0000 (0.0760)  acc5: 0.0000 (0.4040)  time: 0.2632  data: 0.0446  max mem: 4097
+Test: Total time: 0:00:41 (0.3181 s / it)
+* Acc@1 0.076 Acc@5 0.404 loss 7.064
+Traceback (most recent call last):
+  File "main.py", line 862, in <module>
+    main(args)
+  File "main.py", line 628, in main
+    model = pruner.prune() # get the pruned model
+  File "/home/mingyuan/lab/deit/pruner/reg_pruner.py", line 365, in prune
+    loss_scaler(loss, self.optimizer, clip_grad=self.args.clip_grad,
+  File "/home/mingyuan/lab/deit/pruner/reg_pruner.py", line 29, in __call__
+    self._scaler.step(optimizer)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 370, in step
+    retval = self._maybe_opt_step(optimizer, optimizer_state, *args, **kwargs)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 289, in _maybe_opt_step
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 289, in <genexpr>
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+KeyboardInterrupt

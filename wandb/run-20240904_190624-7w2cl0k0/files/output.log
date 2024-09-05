@@ -1,0 +1,138 @@
+
+| distributed init (rank 0): env://
+number of params: 86567656
+0 None None
+1 None 0
+1 None 0
+1 None 0
+1 None 0
+1 None 1
+1 None 1
+1 None 1
+1 None 1
+1 None 2
+1 None 2
+1 None 2
+1 None 2
+1 None 3
+1 None 3
+1 None 3
+1 None 3
+1 None 4
+1 None 4
+1 None 4
+1 None 4
+1 None 5
+1 None 5
+1 None 5
+1 None 5
+1 None 6
+1 None 6
+1 None 6
+1 None 6
+1 None 7
+1 None 7
+1 None 7
+1 None 7
+1 None 8
+1 None 8
+1 None 8
+1 None 8
+1 None 9
+1 None 9
+1 None 9
+1 None 9
+1 None 10
+1 None 10
+1 None 10
+1 None 10
+1 None 11
+1 None 11
+1 None 11
+1 None 11
+2 None None
+Register layer index and kernel shape:
+[ 0]    module.patch_embed.proj -- kernel_shape: torch.Size([768, 3, 16, 16])
+[ 1]   module.blocks.0.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[ 2]  module.blocks.0.attn.proj -- kernel_shape: torch.Size([768, 768])
+[ 3]    module.blocks.0.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[ 4]    module.blocks.0.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[ 5]   module.blocks.1.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[ 6]  module.blocks.1.attn.proj -- kernel_shape: torch.Size([768, 768])
+[ 7]    module.blocks.1.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[ 8]    module.blocks.1.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[ 9]   module.blocks.2.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[10]  module.blocks.2.attn.proj -- kernel_shape: torch.Size([768, 768])
+[11]    module.blocks.2.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[12]    module.blocks.2.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[13]   module.blocks.3.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[14]  module.blocks.3.attn.proj -- kernel_shape: torch.Size([768, 768])
+[15]    module.blocks.3.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[16]    module.blocks.3.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[17]   module.blocks.4.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[18]  module.blocks.4.attn.proj -- kernel_shape: torch.Size([768, 768])
+[19]    module.blocks.4.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[20]    module.blocks.4.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[21]   module.blocks.5.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[22]  module.blocks.5.attn.proj -- kernel_shape: torch.Size([768, 768])
+[23]    module.blocks.5.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[24]    module.blocks.5.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[25]   module.blocks.6.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[26]  module.blocks.6.attn.proj -- kernel_shape: torch.Size([768, 768])
+[27]    module.blocks.6.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[28]    module.blocks.6.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[29]   module.blocks.7.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[30]  module.blocks.7.attn.proj -- kernel_shape: torch.Size([768, 768])
+[31]    module.blocks.7.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[32]    module.blocks.7.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[33]   module.blocks.8.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[34]  module.blocks.8.attn.proj -- kernel_shape: torch.Size([768, 768])
+[35]    module.blocks.8.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[36]    module.blocks.8.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[37]   module.blocks.9.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[38]  module.blocks.9.attn.proj -- kernel_shape: torch.Size([768, 768])
+[39]    module.blocks.9.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[40]    module.blocks.9.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[41]  module.blocks.10.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[42] module.blocks.10.attn.proj -- kernel_shape: torch.Size([768, 768])
+[43]   module.blocks.10.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[44]   module.blocks.10.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[45]  module.blocks.11.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[46] module.blocks.11.attn.proj -- kernel_shape: torch.Size([768, 768])
+[47]   module.blocks.11.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[48]   module.blocks.11.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[49]                module.head -- kernel_shape: torch.Size([1000, 768])
+Test:  [  0/131]  eta: 0:12:40  loss: 7.1086 (7.1086)  acc1: 0.0000 (0.0000)  acc5: 0.5208 (0.5208)  time: 5.8036  data: 4.9531  max mem: 3736
+Test:  [ 10/131]  eta: 0:01:34  loss: 7.0714 (7.0638)  acc1: 0.0000 (0.0710)  acc5: 0.2604 (0.4735)  time: 0.7777  data: 0.5040  max mem: 3737
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 51, in _pin_memory_loop
+    do_one_step()
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in do_one_step
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/multiprocessing/queues.py", line 116, in get
+    return _ForkingPickler.loads(res)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/multiprocessing/reductions.py", line 307, in rebuild_storage_fd
+    fd = df.detach()
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/multiprocessing/connection.py", line 502, in Client
+    c = SocketClient(address)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/multiprocessing/connection.py", line 630, in SocketClient
+    s.connect(address)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "main.py", line 866, in <module>
+  File "main.py", line 662, in main
+    test_stats = evaluate(data_loader_val, model, device) # test set
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/mingyuan/lab/deit/engine.py", line 109, in evaluate
+    metric_logger.update(loss=loss.item())
+KeyboardInterrupt

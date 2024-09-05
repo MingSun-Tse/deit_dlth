@@ -1,0 +1,23 @@
+
+| distributed init (rank 0): env://
+number of params: 86567656
+Start training for 300 epochs
+Epoch: [0]  [   0/1251]  eta: 2:22:45  lr: 0.000001  loss: 7.0753 (7.0753)  time: 6.8466  data: 3.8661  max mem: 26207
+Traceback (most recent call last):
+  File "main.py", line 863, in <module>
+    main(args)
+  File "main.py", line 684, in main
+    train(model, criterion, optimizer, lr_scheduler, n_parameters, device, data_loader_train, data_loader_val, dataset_val, loss_scaler, model_ema, mixup_fn, output_dir)
+  File "main.py", line 789, in train
+    train_stats = train_one_epoch(
+  File "/home/mingyuan/lab/deit/engine.py", line 67, in train_one_epoch
+    loss_scaler(loss, optimizer, clip_grad=max_norm,
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/timm/utils/cuda.py", line 46, in __call__
+    self._scaler.step(optimizer)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 370, in step
+    retval = self._maybe_opt_step(optimizer, optimizer_state, *args, **kwargs)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 289, in _maybe_opt_step
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 289, in <genexpr>
+    if not sum(v.item() for v in optimizer_state["found_inf_per_device"].values()):
+KeyboardInterrupt

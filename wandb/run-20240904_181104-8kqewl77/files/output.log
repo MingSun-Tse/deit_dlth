@@ -1,0 +1,9 @@
+
+| distributed init (rank 0): env://
+Traceback (most recent call last):
+  File "main.py", line 864, in <module>
+    main(args)
+  File "main.py", line 563, in main
+    assert args.base_pr_model, 'If stage_pr is not provided, base_pr_model must be provided'
+AssertionError: If stage_pr is not provided, base_pr_model must be provided
+number of params: 86567656

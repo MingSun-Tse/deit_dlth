@@ -1,0 +1,181 @@
+
+| distributed init (rank 0): env://
+number of params: 86567656
+0 None None
+1 None 0
+1 None 0
+1 None 0
+1 None 0
+1 None 1
+1 None 1
+1 None 1
+1 None 1
+1 None 2
+1 None 2
+1 None 2
+1 None 2
+1 None 3
+1 None 3
+1 None 3
+1 None 3
+1 None 4
+1 None 4
+1 None 4
+1 None 4
+1 None 5
+1 None 5
+1 None 5
+1 None 5
+1 None 6
+1 None 6
+1 None 6
+1 None 6
+1 None 7
+1 None 7
+1 None 7
+1 None 7
+1 None 8
+1 None 8
+1 None 8
+1 None 8
+1 None 9
+1 None 9
+1 None 9
+1 None 9
+1 None 10
+1 None 10
+1 None 10
+1 None 10
+1 None 11
+1 None 11
+1 None 11
+1 None 11
+2 None None
+Register layer index and kernel shape:
+[ 0]    module.patch_embed.proj -- kernel_shape: torch.Size([768, 3, 16, 16])
+[ 1]   module.blocks.0.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[ 2]  module.blocks.0.attn.proj -- kernel_shape: torch.Size([768, 768])
+[ 3]    module.blocks.0.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[ 4]    module.blocks.0.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[ 5]   module.blocks.1.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[ 6]  module.blocks.1.attn.proj -- kernel_shape: torch.Size([768, 768])
+[ 7]    module.blocks.1.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[ 8]    module.blocks.1.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[ 9]   module.blocks.2.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[10]  module.blocks.2.attn.proj -- kernel_shape: torch.Size([768, 768])
+[11]    module.blocks.2.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[12]    module.blocks.2.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[13]   module.blocks.3.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[14]  module.blocks.3.attn.proj -- kernel_shape: torch.Size([768, 768])
+[15]    module.blocks.3.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[16]    module.blocks.3.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[17]   module.blocks.4.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[18]  module.blocks.4.attn.proj -- kernel_shape: torch.Size([768, 768])
+[19]    module.blocks.4.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[20]    module.blocks.4.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[21]   module.blocks.5.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[22]  module.blocks.5.attn.proj -- kernel_shape: torch.Size([768, 768])
+[23]    module.blocks.5.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[24]    module.blocks.5.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[25]   module.blocks.6.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[26]  module.blocks.6.attn.proj -- kernel_shape: torch.Size([768, 768])
+[27]    module.blocks.6.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[28]    module.blocks.6.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[29]   module.blocks.7.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[30]  module.blocks.7.attn.proj -- kernel_shape: torch.Size([768, 768])
+[31]    module.blocks.7.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[32]    module.blocks.7.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[33]   module.blocks.8.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[34]  module.blocks.8.attn.proj -- kernel_shape: torch.Size([768, 768])
+[35]    module.blocks.8.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[36]    module.blocks.8.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[37]   module.blocks.9.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[38]  module.blocks.9.attn.proj -- kernel_shape: torch.Size([768, 768])
+[39]    module.blocks.9.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[40]    module.blocks.9.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[41]  module.blocks.10.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[42] module.blocks.10.attn.proj -- kernel_shape: torch.Size([768, 768])
+[43]   module.blocks.10.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[44]   module.blocks.10.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[45]  module.blocks.11.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[46] module.blocks.11.attn.proj -- kernel_shape: torch.Size([768, 768])
+[47]   module.blocks.11.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[48]   module.blocks.11.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[49]                module.head -- kernel_shape: torch.Size([1000, 768])
+Test:  [  0/131]  eta: 0:11:24  loss: 7.1089 (7.1089)  acc1: 0.0000 (0.0000)  acc5: 0.0000 (0.0000)  time: 5.2259  data: 4.3140  max mem: 3733
+Test:  [ 10/131]  eta: 0:01:24  loss: 7.1089 (7.1065)  acc1: 0.0000 (0.2604)  acc5: 0.2604 (1.2311)  time: 0.7011  data: 0.4343  max mem: 3734
+Test:  [ 20/131]  eta: 0:00:52  loss: 7.0810 (7.1084)  acc1: 0.0000 (0.1364)  acc5: 0.0000 (0.6944)  time: 0.2368  data: 0.0329  max mem: 3734
+Test:  [ 30/131]  eta: 0:00:40  loss: 7.0622 (7.0887)  acc1: 0.0000 (0.0924)  acc5: 0.0000 (0.5040)  time: 0.2408  data: 0.0366  max mem: 3734
+Test:  [ 40/131]  eta: 0:00:34  loss: 7.0574 (7.0828)  acc1: 0.0000 (0.0762)  acc5: 0.0000 (0.4446)  time: 0.2722  data: 0.0693  max mem: 3734
+Test:  [ 50/131]  eta: 0:00:28  loss: 7.0648 (7.0833)  acc1: 0.0000 (0.0715)  acc5: 0.0000 (0.5310)  time: 0.2735  data: 0.0691  max mem: 3734
+Test:  [ 60/131]  eta: 0:00:23  loss: 7.0386 (7.0758)  acc1: 0.0000 (0.1195)  acc5: 0.0000 (0.5464)  time: 0.2597  data: 0.0540  max mem: 3734
+Test:  [ 70/131]  eta: 0:00:20  loss: 6.9716 (7.0633)  acc1: 0.0000 (0.1027)  acc5: 0.0000 (0.4768)  time: 0.2645  data: 0.0591  max mem: 3734
+Test:  [ 80/131]  eta: 0:00:16  loss: 6.9533 (7.0517)  acc1: 0.0000 (0.1479)  acc5: 0.0000 (0.6526)  time: 0.2655  data: 0.0585  max mem: 3734
+Test:  [ 90/131]  eta: 0:00:12  loss: 6.9991 (7.0532)  acc1: 0.0000 (0.1374)  acc5: 0.0000 (0.6181)  time: 0.2583  data: 0.0492  max mem: 3734
+Test:  [100/131]  eta: 0:00:09  loss: 7.0671 (7.0558)  acc1: 0.0000 (0.1341)  acc5: 0.0000 (0.5956)  time: 0.2599  data: 0.0529  max mem: 3734
+Test:  [110/131]  eta: 0:00:06  loss: 7.0756 (7.0599)  acc1: 0.0000 (0.1337)  acc5: 0.0000 (0.6053)  time: 0.2621  data: 0.0548  max mem: 3734
+Test:  [120/131]  eta: 0:00:03  loss: 7.1148 (7.0597)  acc1: 0.0000 (0.1227)  acc5: 0.0000 (0.5811)  time: 0.2607  data: 0.0531  max mem: 3734
+Test:  [130/131]  eta: 0:00:00  loss: 7.1193 (7.0664)  acc1: 0.0000 (0.1140)  acc5: 0.0000 (0.5560)  time: 0.2450  data: 0.0439  max mem: 3734
+Test: Total time: 0:00:38 (0.2958 s / it)
+* Acc@1 0.114 Acc@5 0.556 loss 7.066
+Start training for 300 epochs
+Epoch: [0]  [   0/1251]  eta: 1:58:09  lr: 0.000001  loss: 7.1069 (7.1069)  time: 5.6671  data: 3.1741  max mem: 26542
+Epoch: [0]  [  10/1251]  eta: 0:20:45  lr: 0.000001  loss: 7.0594 (7.0584)  time: 1.0036  data: 0.2888  max mem: 27216
+Epoch: [0]  [  20/1251]  eta: 0:15:42  lr: 0.000001  loss: 7.0554 (7.0587)  time: 0.5210  data: 0.0002  max mem: 27216
+Epoch: [0]  [  30/1251]  eta: 0:13:55  lr: 0.000001  loss: 7.0554 (7.0605)  time: 0.5082  data: 0.0002  max mem: 27216
+Epoch: [0]  [  40/1251]  eta: 0:13:02  lr: 0.000001  loss: 7.0549 (7.0603)  time: 0.5196  data: 0.0002  max mem: 27216
+Epoch: [0]  [  50/1251]  eta: 0:12:27  lr: 0.000001  loss: 7.0520 (7.0578)  time: 0.5269  data: 0.0002  max mem: 27216
+Epoch: [0]  [  60/1251]  eta: 0:12:08  lr: 0.000001  loss: 7.0484 (7.0562)  time: 0.5408  data: 0.0003  max mem: 27216
+Epoch: [0]  [  70/1251]  eta: 0:11:55  lr: 0.000001  loss: 7.0491 (7.0548)  time: 0.5630  data: 0.0002  max mem: 27216
+Epoch: [0]  [  80/1251]  eta: 0:11:41  lr: 0.000001  loss: 7.0522 (7.0545)  time: 0.5624  data: 0.0002  max mem: 27216
+Epoch: [0]  [  90/1251]  eta: 0:11:29  lr: 0.000001  loss: 7.0535 (7.0542)  time: 0.5528  data: 0.0002  max mem: 27216
+Epoch: [0]  [ 100/1251]  eta: 0:12:14  lr: 0.000001  loss: 7.0553 (7.0553)  time: 0.7974  data: 0.0002  max mem: 27216
+Epoch: [0]  [ 110/1251]  eta: 0:12:20  lr: 0.000001  loss: 7.0528 (7.0548)  time: 0.8969  data: 0.0002  max mem: 27216
+Epoch: [0]  [ 120/1251]  eta: 0:12:09  lr: 0.000001  loss: 7.0436 (7.0536)  time: 0.6769  data: 0.0002  max mem: 27216
+Epoch: [0]  [ 130/1251]  eta: 0:11:52  lr: 0.000001  loss: 7.0436 (7.0535)  time: 0.5621  data: 0.0002  max mem: 27216
+Epoch: [0]  [ 140/1251]  eta: 0:11:36  lr: 0.000001  loss: 7.0280 (7.0516)  time: 0.5182  data: 0.0002  max mem: 27216
+Epoch: [0]  [ 150/1251]  eta: 0:11:21  lr: 0.000001  loss: 7.0278 (7.0509)  time: 0.5115  data: 0.0002  max mem: 27216
+Epoch: [0]  [ 160/1251]  eta: 0:11:08  lr: 0.000001  loss: 7.0304 (7.0501)  time: 0.5122  data: 0.0003  max mem: 27216
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7519283b3280>
+Traceback (most recent call last):
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1479, in __del__
+Exception in thread Thread-4:
+Traceback (most recent call last):
+      File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+self._shutdown_workers()
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1424, in _shutdown_workers
+        self._worker_result_queue.put((None, None))self.run()
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/multiprocessing/queues.py", line 88, in put
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/threading.py", line 870, in run
+        self._start_thread()self._target(*self._args, **self._kwargs)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/multiprocessing/queues.py", line 173, in _start_thread
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 51, in _pin_memory_loop
+    self._thread.start()
+do_one_step()  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/threading.py", line 852, in start
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in do_one_step
+        _start_new_thread(self._bootstrap, ())r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+KeyboardInterrupt  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/multiprocessing/queues.py", line 116, in get
+:
+    return _ForkingPickler.loads(res)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/multiprocessing/reductions.py", line 307, in rebuild_storage_fd
+    fd = df.detach()
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/multiprocessing/connection.py", line 502, in Client
+    c = SocketClient(address)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/multiprocessing/connection.py", line 630, in SocketClient
+    s.connect(address)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "main.py", line 864, in <module>
+  File "main.py", line 684, in main
+    train(model, criterion, optimizer, lr_scheduler, n_parameters, device, data_loader_train, data_loader_val, dataset_val, loss_scaler, model_ema, mixup_fn, output_dir)
+  File "main.py", line 791, in train
+    optimizer, device, epoch, loss_scaler,
+  File "/home/mingyuan/lab/deit/engine.py", line 63, in train_one_epoch
+    optimizer.zero_grad()
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/optim/optimizer.py", line 461, in zero_grad
+    p.grad = None
+KeyboardInterrupt

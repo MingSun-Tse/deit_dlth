@@ -1,0 +1,354 @@
+wandb_version: 1
+
+batch_size:
+  desc: null
+  value: 256
+epochs:
+  desc: null
+  value: 300
+bce_loss:
+  desc: null
+  value: false
+unscale_lr:
+  desc: null
+  value: false
+model:
+  desc: null
+  value: deit_base_patch16_224
+input_size:
+  desc: null
+  value: 224
+drop:
+  desc: null
+  value: 0.0
+drop_path:
+  desc: null
+  value: 0.1
+model_ema:
+  desc: null
+  value: true
+model_ema_decay:
+  desc: null
+  value: 0.99996
+model_ema_force_cpu:
+  desc: null
+  value: false
+opt:
+  desc: null
+  value: adamw
+opt_eps:
+  desc: null
+  value: 1.0e-08
+opt_betas:
+  desc: null
+  value: null
+clip_grad:
+  desc: null
+  value: null
+momentum:
+  desc: null
+  value: 0.9
+weight_decay:
+  desc: null
+  value: 0.05
+sched:
+  desc: null
+  value: cosine
+lr:
+  desc: null
+  value: 0.0005
+lr_noise:
+  desc: null
+  value: null
+lr_noise_pct:
+  desc: null
+  value: 0.67
+lr_noise_std:
+  desc: null
+  value: 1.0
+warmup_lr:
+  desc: null
+  value: 1.0e-06
+min_lr:
+  desc: null
+  value: 1.0e-05
+decay_epochs:
+  desc: null
+  value: 30
+warmup_epochs:
+  desc: null
+  value: 5
+cooldown_epochs:
+  desc: null
+  value: 10
+patience_epochs:
+  desc: null
+  value: 10
+decay_rate:
+  desc: null
+  value: 0.1
+color_jitter:
+  desc: null
+  value: 0.3
+aa:
+  desc: null
+  value: rand-m9-mstd0.5-inc1
+smoothing:
+  desc: null
+  value: 0.1
+train_interpolation:
+  desc: null
+  value: bicubic
+repeated_aug:
+  desc: null
+  value: true
+train_mode:
+  desc: null
+  value: true
+ThreeAugment:
+  desc: null
+  value: false
+src:
+  desc: null
+  value: false
+reprob:
+  desc: null
+  value: 0.25
+remode:
+  desc: null
+  value: pixel
+recount:
+  desc: null
+  value: 1
+resplit:
+  desc: null
+  value: false
+mixup:
+  desc: null
+  value: 0.8
+cutmix:
+  desc: null
+  value: 1.0
+cutmix_minmax:
+  desc: null
+  value: null
+mixup_prob:
+  desc: null
+  value: 1.0
+mixup_switch_prob:
+  desc: null
+  value: 0.5
+mixup_mode:
+  desc: null
+  value: batch
+teacher_model:
+  desc: null
+  value: regnety_160
+teacher_path:
+  desc: null
+  value: ''
+distillation_type:
+  desc: null
+  value: none
+distillation_alpha:
+  desc: null
+  value: 0.5
+distillation_tau:
+  desc: null
+  value: 1.0
+cosub:
+  desc: null
+  value: false
+finetune:
+  desc: null
+  value: ''
+attn_only:
+  desc: null
+  value: false
+data_path:
+  desc: null
+  value: data/imagenet
+data_set:
+  desc: null
+  value: IMNET
+inat_category:
+  desc: null
+  value: name
+device:
+  desc: null
+  value: cuda
+seed:
+  desc: null
+  value: null
+resume:
+  desc: null
+  value: ''
+start_epoch:
+  desc: null
+  value: 0
+eval:
+  desc: null
+  value: false
+eval_crop_ratio:
+  desc: null
+  value: 0.875
+dist_eval:
+  desc: null
+  value: false
+num_workers:
+  desc: null
+  value: 10
+pin_mem:
+  desc: null
+  value: true
+distributed:
+  desc: null
+  value: false
+world_size:
+  desc: null
+  value: 1
+dist_url:
+  desc: null
+  value: env://
+print_interval:
+  desc: null
+  value: 100
+test_interval:
+  desc: null
+  value: 2000
+plot_interval:
+  desc: null
+  value: 100000000
+block_loss_grad:
+  desc: null
+  value: false
+save_interval:
+  desc: null
+  value: 2000
+stage_pr:
+  desc: null
+  value: ''
+wg:
+  desc: null
+  value: filter
+method:
+  desc: null
+  value: ''
+save_init_model:
+  desc: null
+  value: true
+base_pr_model:
+  desc: null
+  value: null
+inherit_pruned:
+  desc: null
+  value: index
+index_layer:
+  desc: null
+  value: numbers
+pick_pruned:
+  desc: null
+  value: min
+skip_layers:
+  desc: null
+  value: ''
+resume_path:
+  desc: null
+  value: null
+directly_ft_weights:
+  desc: null
+  value: null
+base_model_path:
+  desc: null
+  value: null
+project_name:
+  desc: null
+  value: deit_base_patch16_224_pretrain
+debug:
+  desc: null
+  value: false
+screen_print:
+  desc: null
+  value: false
+test_pretrained:
+  desc: null
+  value: false
+verbose:
+  desc: null
+  value: false
+batch_size_prune:
+  desc: null
+  value: 64
+update_reg_interval:
+  desc: null
+  value: 5
+stabilize_reg_interval:
+  desc: null
+  value: 40000
+lr_prune:
+  desc: null
+  value: 0.0001
+reg_upper_limit:
+  desc: null
+  value: 1.0
+reg_upper_limit_pick:
+  desc: null
+  value: 0.01
+reg_granularity_pick:
+  desc: null
+  value: 1.0e-05
+reg_granularity_prune:
+  desc: null
+  value: 0.0001
+reg_granularity_recover:
+  desc: null
+  value: -0.0001
+RST_schedule:
+  desc: null
+  value: x
+num_cycles:
+  desc: null
+  value: 0
+lr_ft_mini:
+  desc: null
+  value: ''
+epochs_mini:
+  desc: null
+  value: 0
+LTH_Iter:
+  desc: null
+  value: false
+CodeID:
+  desc: null
+  value: 7e160fe4
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.19
+    cli_version: 0.17.8
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1725488116
+    t:
+      1:
+      - 1
+      - 41
+      - 51
+      - 55
+      - 63
+      2:
+      - 1
+      - 41
+      - 51
+      - 55
+      - 63
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.8.19
+      5: 0.17.8
+      8:
+      - 5
+      13: linux-x86_64

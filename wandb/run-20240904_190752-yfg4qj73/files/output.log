@@ -1,0 +1,114 @@
+
+| distributed init (rank 0): env://
+number of params: 86567656
+0 None None
+1 None 0
+1 None 0
+1 None 0
+1 None 0
+1 None 1
+1 None 1
+1 None 1
+1 None 1
+1 None 2
+1 None 2
+1 None 2
+1 None 2
+1 None 3
+1 None 3
+1 None 3
+1 None 3
+1 None 4
+1 None 4
+1 None 4
+1 None 4
+1 None 5
+1 None 5
+1 None 5
+1 None 5
+1 None 6
+1 None 6
+1 None 6
+1 None 6
+1 None 7
+1 None 7
+1 None 7
+1 None 7
+1 None 8
+1 None 8
+1 None 8
+1 None 8
+1 None 9
+1 None 9
+1 None 9
+1 None 9
+1 None 10
+1 None 10
+1 None 10
+1 None 10
+1 None 11
+1 None 11
+1 None 11
+1 None 11
+2 None None
+Register layer index and kernel shape:
+[ 0]    module.patch_embed.proj -- kernel_shape: torch.Size([768, 3, 16, 16])
+[ 1]   module.blocks.0.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[ 2]  module.blocks.0.attn.proj -- kernel_shape: torch.Size([768, 768])
+[ 3]    module.blocks.0.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[ 4]    module.blocks.0.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[ 5]   module.blocks.1.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[ 6]  module.blocks.1.attn.proj -- kernel_shape: torch.Size([768, 768])
+[ 7]    module.blocks.1.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[ 8]    module.blocks.1.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[ 9]   module.blocks.2.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[10]  module.blocks.2.attn.proj -- kernel_shape: torch.Size([768, 768])
+[11]    module.blocks.2.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[12]    module.blocks.2.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[13]   module.blocks.3.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[14]  module.blocks.3.attn.proj -- kernel_shape: torch.Size([768, 768])
+[15]    module.blocks.3.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[16]    module.blocks.3.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[17]   module.blocks.4.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[18]  module.blocks.4.attn.proj -- kernel_shape: torch.Size([768, 768])
+[19]    module.blocks.4.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[20]    module.blocks.4.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[21]   module.blocks.5.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[22]  module.blocks.5.attn.proj -- kernel_shape: torch.Size([768, 768])
+[23]    module.blocks.5.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[24]    module.blocks.5.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[25]   module.blocks.6.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[26]  module.blocks.6.attn.proj -- kernel_shape: torch.Size([768, 768])
+[27]    module.blocks.6.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[28]    module.blocks.6.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[29]   module.blocks.7.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[30]  module.blocks.7.attn.proj -- kernel_shape: torch.Size([768, 768])
+[31]    module.blocks.7.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[32]    module.blocks.7.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[33]   module.blocks.8.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[34]  module.blocks.8.attn.proj -- kernel_shape: torch.Size([768, 768])
+[35]    module.blocks.8.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[36]    module.blocks.8.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[37]   module.blocks.9.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[38]  module.blocks.9.attn.proj -- kernel_shape: torch.Size([768, 768])
+[39]    module.blocks.9.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[40]    module.blocks.9.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[41]  module.blocks.10.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[42] module.blocks.10.attn.proj -- kernel_shape: torch.Size([768, 768])
+[43]   module.blocks.10.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[44]   module.blocks.10.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[45]  module.blocks.11.attn.qkv -- kernel_shape: torch.Size([2304, 768])
+[46] module.blocks.11.attn.proj -- kernel_shape: torch.Size([768, 768])
+[47]   module.blocks.11.mlp.fc1 -- kernel_shape: torch.Size([3072, 768])
+[48]   module.blocks.11.mlp.fc2 -- kernel_shape: torch.Size([768, 3072])
+[49]                module.head -- kernel_shape: torch.Size([1000, 768])
+Traceback (most recent call last):
+  File "main.py", line 863, in <module>
+    if __name__ == '__main__':
+  File "main.py", line 628, in main
+    model = pruner.prune() # get the pruned model
+  File "/home/mingyuan/lab/deit/pruner/l1_pruner.py", line 15, in prune
+    self._get_kept_wg_L1()
+  File "/home/mingyuan/lab/deit/pruner/meta_pruner.py", line 281, in _get_kept_wg_L1
+    self.kept_wg[name] = list(set(range(len(score))) - set(self.pruned_wg[name]))
+KeyboardInterrupt

@@ -1,0 +1,18 @@
+
+| distributed init (rank 2): env://
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x78e0961e6280>
+    Traceback (most recent call last):
+self.run()
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/threading.py", line 870, in run
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1479, in __del__
+    self._target(*self._args, **self._kwargs)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 51, in _pin_memory_loop
+    do_one_step()
+      File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in do_one_step
+self._shutdown_workers()
+KeyboardInterrupt:
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/multiprocessing/queues.py", line 116, in get

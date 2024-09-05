@@ -1,0 +1,13 @@
+
+| distributed init (rank 2): env://
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x70810bbf2160>
+Traceback (most recent call last):
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1479, in __del__
+    self._shutdown_workers()
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1425, in _shutdown_workers
+    self._pin_memory_thread.join()
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/threading.py", line 1011, in join
+    self._wait_for_tstate_lock()
+  File "/home/mingyuan/anaconda3/envs/deit/lib/python3.8/threading.py", line 1027, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt:
