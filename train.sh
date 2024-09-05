@@ -11,17 +11,18 @@ export PRETRAIN_EXP_ID=$3
 if [ "$METHOD" == "L1" ]; then
     for sparsity in "${sparsity_values[@]}"; do
         # L1
-        EXP_ID=$(python -m torch.distributed.launch --nproc_per_node=4 \
-                                                    --master_port=12345 \
-                                                    --use_env main.py \
-                                                    --model deit_base_patch16_224 \
-                                                    --batch-size $BATCH_SIZE \
-                                                    --data-path data/imagenet \
-                                                    --stage_pr "[0,$sparsity,0]" \
-                                                    --wg weight \
-                                                    --method L1 \
-                                                    --base_model_path Experiments/${PRETRAIN_EXP_ID}/weights/checkpoint.pth \
-                                                    --project_name deit_base_patch16_224_L1_${sparsity} 2>&1 | tee ExpID.log | grep "EXP_ID:" | awk -F':' '{print $2}')
+        python -m torch.distributed.launch  --nproc_per_node=4 \
+                                            --master_port=12345 \
+                                            --use_env main.py \
+                                            --model deit_base_patch16_224 \
+                                            --batch-size $BATCH_SIZE \
+                                            --data-path data/imagenet \
+                                            --stage_pr "[0,$sparsity,0]" \
+                                            --wg weight \
+                                            --method L1 \
+                                            --base_model_path Experiments/${PRETRAIN_EXP_ID}/weights/checkpoint.pth \
+                                            --project_name deit_base_patch16_224_L1_${sparsity} 2>&1 | tee ExpID.log
+        EXP_ID=$(grep "EXP_ID:" ExpID.log | head -n 1 | awk -F':' '{print $2}')
         # LTH
         python -m torch.distributed.launch  --nproc_per_node=4 \
                                             --master_port=12345 \
